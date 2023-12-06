@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "SearchHotel"
+include ':app'
+
+include ':data:local:localdatasearch'
+include ':data:local:searchhistory'
+include ':data:remote:search'
+
+include ':domain:search'
+
